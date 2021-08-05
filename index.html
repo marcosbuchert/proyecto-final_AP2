@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <title>Flags Trivia | Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-xl-3 col-sm-12 col-lg-4">
+          <div class="row">
+            <div id="info" class="col">
+              <header class="sticky-top">
+                <button type="button" onclick="titulo()" class="boton">
+                  <h1>Flags Trivia!</h1>
+                </button>
+                <section id="menu">
+                  <div class="row">
+                    <div class="bloque col-12">
+                      <label>Jugador N°1</label><br>
+                      <input name="nombre_jugador1" type="text" id="nombre_jugador1" placeholder="Nombre del jugador 1">
+                    </div>
+                    <div id="segundo_jugador" class="bloque col-12">
+                      <label>Jugador N°2</label><br>
+                      <input name="nombre_jugador2" type="text" id="nombre_jugador2" placeholder="Nombre del jugador 1">
+                    </div>
+                    <div class="bloque col-12">
+                       <button type="button" onclick="datos()">Jugar</button>
+                    </div>
+                  </div>
+                </section>
+              </header>
+              <div id="copy">
+                &copy;2016  Marcos A. Büchert
+              </div>
+            </div>   
+          </div>
+        </div>  
+<!------------------------------------------------------------------------------------------>          
+        <div class="col">
+          <main>
+            <div class="row">
+              <div class="col">
+                <button type="button" onclick="modos_de_juegos()" class="boton">
+                  <h2 id="titulo_modo">MODOS DE JUEGOS</h2>
+                </button>
+                <div class="row">
+<!----------------------------------------->                   
+                  <div class="col-sm-6 col-md-6 col-xl-6">
+                    <div id="bloque_modo1" class="block rounded border">
+                      <button type="button" onclick="modo1()" class="boton">
+                        <h3>1 JUGADOR <i class="fas fa-user"></i></h3>
+                        <p>
+                        En este modo vas a intentar auto-superate intentando responder correctamenta la mayor cantidad de nombre de banderas.
+                      </p>
+                      </button>
+                    </div>
+                  </div>
+<!----------------------------------------->                   
+                  <div class="col-sm-6 col-md-6 col-xl-6">
+                    <div id="bloque_modo2" class="block rounded border">
+                      <button type="button" onclick="modo2()" class="boton"><h3>2 JUGADORES <i class="fas fa-user"></i><i class="fas fa-user"></i></h3>
+                        <p>
+                        En este modo vas a intentar superar a tu oponente a toda costa intentando ganarle en la cantidad de banderas adivinadas.
+                      </p>
+                      </button>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!------------------------------------------------------------------------------------------>             
+            <div class="row">
+              <div class="col">
+                <button type="button" onclick="temas()" class="boton">
+                  <h2 id="titulo_tema">TEMAS</h2>
+                </button>
+                <div class="row">
+<!----------------------------------------->                   
+                  <div class="col-sm-4 col-md-4 col-xl-4">
+                    <div id="bloque_tema_provincias" class="block rounded border">
+                      <button type="button" onclick="tema_provincias()" class="boton">
+                        <h3>PROVINCIAS</h3>
+                      <p>
+                        Competiras por saber la mayor cantidad de banderas de
+                      </p>
+                      </button>
+                    </div>
+                  </div>
+<!-----------------------------------------> 
+                  <div class="col-sm-4 col-md-4 col-xl-4">
+                    <div id="bloque_tema_america" class="block rounded border">
+                      <button type="button" onclick="tema_america()" class="boton">
+                        <h3>AMERICA</h3>
+                      <p>
+                        Competiras por saber la mayor cantidad de banderas de
+                      </p>
+                      </button>
+                    </div>
+                  </div>
+<!-----------------------------------------> 
+                  <div class="col-sm-4 col-md-4 col-xl-4">
+                    <div id="bloque_tema_europa" class="block rounded border">
+                      <button type="button" onclick="tema_europa()" class="boton">
+                        <h3>EUROPA</h3>
+                      <p>
+                        Competiras por saber la mayor cantidad de banderas de
+                      </p> 
+                      </button>                 
+                    </div>
+                  </div>
+<!-----------------------------------------> 
+                  <div class="col-sm-4 col-md-4 col-xl-4">
+                    <div id="bloque_tema_asia" class="block rounded border">
+                      <button type="button" onclick="tema_asia()" class="boton">
+                        <h3>ASIA</h3>
+                      <p>
+                        Competiras por saber la mayor cantidad de banderas de
+                      </p>
+                      </button>
+                    </div>
+                  </div>
+<!-----------------------------------------> 
+                  <div class="col-sm-4 col-md-4 col-xl-4">
+                    <div id="bloque_tema_africa" class="block rounded border">
+                      <button type="button" onclick="tema_africa()" class="boton">
+                        <h3>AFRICA</h3>
+                      <p>
+                        Competiras por saber la mayor cantidad de banderas de
+                      </p>
+                      </button>
+                    </div>
+                  </div>
+<!-----------------------------------------> 
+                  <div class="col-sm-4 col-md-4 col-xl-4">
+                    <div id="bloque_tema_oceania" class="block rounded border">
+                      <button type="button" onclick="tema_oceania()" class="boton">
+                        <h3>OCEANIA</h3>
+                      <p>
+                        Competiras por saber la mayor cantidad de banderas de
+                      </p>
+                      </button>
+                    </div>
+                  </div>
+<!-----------------------------------------> 
+                  <div class="col-sm-12 col-md-12 col-xl-12">
+                    <div id="bloque_tema_mundo" class="block rounded border">
+                      <button type="button" onclick="tema_mundo()" class="boton">
+                        <h3>MUNDO</h3>
+                      <p>
+                        Competiras por saber la mayor cantidad de banderas de
+                      </p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <script src="js/app.js"></script>
+      <script src="js/pase_datos.js"></script>
+    </div>
+  </body>
+</html>

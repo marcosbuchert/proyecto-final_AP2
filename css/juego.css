@@ -1,0 +1,76 @@
+body{
+  padding: 20px;
+  background: linear-gradient(#2655a0, #5985cc);
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+}
+#juego_recuadro{
+  margin: auto;
+  width: 70%;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+h1{
+  margin: 15px;
+  font-size: 60px;
+  font-family: 'Luckiest Guy', cursive;
+}
+.boton{
+  background-color: rgba(255, 255, 255, 0.0);
+  border-style: none;
+}
+.opcion{
+  background-color: #2655a0;
+  color: white;
+  border-style: none; 
+  margin: 20px;
+  width: 400px;
+  height: 70px;
+  border-radius: 20px;
+}
+.reloj{
+  float: left;
+  font-size: 30px;
+  font-family: Courier,sans-serif;
+  color: #363431;
+  margin: 0;
+  padding: 2;
+}
+button[type="button"]:active{
+  transform: scale(0.95);
+}
+img{
+  width: 200px;
+  height: 100px;
+}
+
+.nombre_pantalla{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.contadores{
+  width: 20px;
+  height: 20px;
+}
+#vidas_jugador{
+  float: right;
+  margin-right: 0px;
+}
+#contador_jugador{
+  float: right;
+  margin-right: 0px;
+}
+.vidas_2jugadores{
+  margin-left: 30px;
+  margin-right: 30px;
+}
